@@ -1,6 +1,11 @@
-{
+[
+  {
     "name": "Furius Pack",
-    "image": "assets/images/packs/pack-placeholder.png",
+    "description": "My PvP texture pack — clean, fast, optimal for hits.",
+    "version": "1.0",
+    "image": "assets/images/packs/sample-texture.png",
     "download": "packs/texture-packs/Furius Pack.zip"
-}
+  }
+]
+
 
