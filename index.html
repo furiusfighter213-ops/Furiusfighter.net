@@ -1,48 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Furiusfighter.net</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Furiusfighter.net</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="background"></div>
 
-    <div class="background"></div>
-
-    <header>
-        <div class="logo-placeholder">Furiusfighter.net</div>
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo-placeholder">Furiusfighter</div>
+      <div class="brand-text">
         <h1>Furiusfighter.net</h1>
-        <p>🔥 Official PvP & Mod Downloads 🔥</p>
-    </header>
+        <p class="tag">Official PvP Texture Packs & Mods</p>
+      </div>
+    </div>
 
-    <main>
-        <section id="texturepacks">
-            <h2>🎨 Texture Packs</h2>
-            <div class="card-container">
-                <div class="card">
-                    <h3>Sample Texture Pack</h3>
-                    <p>No image yet</p>
-                    <button class="download-btn">Download</button>
-                </div>
-            </div>
-        </section>
+    <nav class="main-nav">
+      <a href="#packs">Packs</a>
+      <a href="#mods">Mods</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-        <section id="mods">
-            <h2>⚙️ Mods</h2>
-            <div class="card-container">
-                <div class="card">
-                    <h3>Sample Mod</h3>
-                    <p>No image yet</p>
-                    <button class="download-btn">Download</button>
-                </div>
-            </div>
-        </section>
-    </main>
+  <main>
+    <section id="hero" class="hero">
+      <div class="hero-content">
+        <h2 class="hero-title">Furius Pack & More</h2>
+        <p class="hero-sub">High-quality PvP packs — ready to download</p>
+      </div>
+    </section>
 
-    <footer>
-        <p>© 2025 Furiusfighter.net | Made with ❤️ by Furiusfighter</p>
-    </footer>
+    <section id="packs" class="section">
+      <h3>🎨 Texture Packs</h3>
+      <div id="packs-grid" class="grid"></div>
+    </section>
 
+    <section id="mods" class="section">
+      <h3>⚙️ Mods</h3>
+      <div id="mods-grid" class="grid"></div>
+    </section>
+
+    <section id="about" class="section about">
+      <h3>About</h3>
+      <p>Hi — I’m Furiusfighter. I make PvP texture packs and mods. More content coming soon (YouTube etc.).</p>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h3>Contact & Support</h3>
+
+      <div class="contacts">
+        <!-- Replace the links below with your real links -->
+        <div class="contact-item">
+          <h4>Discord</h4>
+          <p><a id="discord-link" href="https://discord.gg/YOUR_INVITE" target="_blank" rel="noopener">Join my Discord</a></p>
+
+          <!-- Discord widget (optional) — replace SERVER_ID and enable widget in your server settings -->
+          <div class="discord-widget-wrapper">
+            <!-- If you don't have widget enabled, this iframe will stay blank — you can remove it. -->
+            <iframe id="discord-widget"
+              src="https://discord.com/widget?id=SERVER_ID&theme=dark"
+              allowtransparency="true" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+              style="width:100%; height:220px; border:0; border-radius:8px; display:block;">
+            </iframe>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <h4>PayPal</h4>
+          <p><a id="paypal-link" href="https://www.paypal.com/donate/YOUR_PAYPAL_LINK" target="_blank" rel="noopener">Support / Donate</a></p>
+        </div>
+
+        <div class="contact-item">
+          <h4>YouTube</h4>
+          <p id="youtube-text">YouTube channel coming soon</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div>© <span id="year"></span> Furiusfighter.net</div>
+    <div class="small-note">Made with ❤️ — Upload packs to <code>/packs/texture-packs/</code> and mods to <code>/packs/mods/</code></div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
