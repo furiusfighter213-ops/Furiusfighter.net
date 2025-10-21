@@ -1,7 +1,6 @@
-[
-  {
+{
     "name": "Furius Pack",
-    "image": "assets/images/packs/sample-texture.png",
+    "image": "assets/images/packs/pack-placeholder.png",
     "download": "packs/texture-packs/Furius Pack.zip"
-  }
-]
+}
+
